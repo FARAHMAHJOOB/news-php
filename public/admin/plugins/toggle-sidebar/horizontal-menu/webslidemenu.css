@@ -1,0 +1,1500 @@
+.main-content .navbar-top {
+	position: relative !important;
+}
+
+.horizontalMenu html,
+.horizontalMenu body,
+.horizontalMenu iframe,
+.horizontalMenu h1,
+.horizontalMenu h2,
+.horizontalMenu h3,
+.horizontalMenu h4,
+.horizontalMenu h5,
+.horizontalMenu h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "iransans", Helvetica, sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-smoothing: antialiased;
+	font-smooth: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-smoothing: subpixel-antialiased;
+	font-smooth: subpixel-antialiased;
+}
+
+.horizontalMenu .cl {
+	clear: both;
+}
+
+.horizontalMenu img,
+object,
+embed,
+video {
+	border: 0 none;
+	max-width: 100%;
+}
+
+.horizontalMenu a:focus {
+	outline: none;
+}
+
+.horizontalMenu:before,
+.horizontalMenu:after {
+	content: "";
+	display: table;
+}
+
+.horizontalMenu:after {
+	clear: both;
+}
+
+.rtl .dropdown-menu {
+	left: 0 !important;
+	right: unset !important;
+}
+
+.dropdown-menu-right {
+	left: 0 !important;
+	right: auto !important;
+}
+
+/* ================== Desktop Main Menu CSS ================== */
+
+.horizontalMenucontainer {
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+
+.horizontal-main {
+	width: 100%;
+	position: relative;
+	background: #081340;
+}
+
+.horizontal-mainwrapper {
+	margin: 0 auto;
+	/*max-width: 1200px;*/
+	width: 100%;
+}
+
+.desktoplogo {
+	padding: 1.5rem 0;
+	margin: 0;
+	float: left;
+}
+
+.desktoplogo img {
+	width: 100%
+}
+
+.horizontalMenu {
+	font-family: "iransans", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 14px;
+	padding: 0;
+	float: right;
+	display: block;
+
+}
+
+.horizontalMenu>.horizontalMenu-list {
+	text-align: right;
+	margin: 0 auto 0 auto;
+	width: 100%;
+	display: block;
+	padding: 0;
+}
+
+.mega-menubg {
+	border: 1px solid #dae0ef;
+	background: #fff;
+	font-size: 15px;
+	padding: 14px 5px;
+	box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+}
+
+.horizontalMenu>.horizontalMenu-list>li {
+	text-align: center;
+	display: block;
+	padding: 0;
+	margin: 0;
+	float: right;
+	/*padding: 1.5rem 0;*/
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a {
+	display: block;
+	padding: 1rem 1.4rem 1rem;
+	text-decoration: none;
+	position: relative;
+	margin: 0 2px;
+	color: #fff;
+}
+
+.horizontalMenu>.horizontalMenu-list>li:last-child>a {
+	border-left: 0px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li a.menuhomeicon {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a .fa {
+	display: inline-block;
+	font-size: 14px;
+	line-height: inherit;
+	margin-left: 12px;
+	vertical-align: top;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a .fa.fa-home {
+	font-size: 15px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a .arrow:after {
+	border-left: 4px solid rgba(0, 0, 0, 0);
+	border-right: 4px solid rgba(0, 0, 0, 0);
+	border-top: 4px solid;
+	content: "";
+	float: left;
+	right: 11px;
+	height: 0;
+	margin: 0 0 0 14px;
+	position: absolute;
+	text-align: right;
+	top: 33px;
+	width: 0;
+}
+
+/* Desktop Search Bar */
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu {
+	float: left;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu a {
+	padding: 0px 20px 0px 30px;
+	border-left: none;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu a .fa {
+	font-size: 15px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu {
+	float: left;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu:before,
+.horizontalMenu-list>li.rightmenu:after {
+	content: "";
+	display: table;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu:after {
+	clear: both;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch {
+	float: left;
+	width: 210px;
+	height: 39px;
+	position: relative;
+	margin: 16px 0px 0px 0px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch .searchicon {
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch input {
+	width: 100%;
+	position: relative;
+	float: left;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	text-indent: 15px;
+	height: 39px;
+	z-index: 2;
+	outline: none;
+	color: #333;
+	background-color: #efefef;
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+	font-size: 12px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch input::placeholder {
+	color: #24214c;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch input:focus {
+	color: #333;
+	width: 230px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch input:focus~.btnstyle .fa {
+	color: #24214c;
+	opacity: 1;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch input:focus~.searchicon {
+	opacity: 1;
+	z-index: 3;
+	color: #FFFFFF;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch .btnstyle {
+	top: 0px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 40px;
+	line-height: 30px;
+	z-index: 1;
+	cursor: pointer;
+	opacity: 0.3;
+	color: #333;
+	z-index: 1000;
+	background-color: transparent;
+	border: solid 0px;
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch .btnstyle .fa {
+	line-height: 37px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch .btnstyle:hover .fa {
+	opacity: 1;
+}
+
+.horizontalMenu>.horizontalMenu-list>li.rightmenu {
+	zoom: 1;
+}
+
+/* ================== Desktop Drop Down Menu CSS ================== */
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu {
+	position: absolute;
+	top: 51px;
+	z-index: 1000;
+	margin: 0px;
+	padding: 0px;
+	min-width: 190px;
+	background-color: #fff;
+	border: 1px solid #dae0ef;
+	box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a {
+	background-image: none;
+	color: #24214c;
+	border-left: 0 none;
+	text-align: right;
+	display: block;
+	line-height: 22px;
+	padding: 8px 12px;
+	text-transform: none;
+	font-size: 13px;
+	letter-spacing: normal;
+	border-left: 0px solid;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a:hover {
+	text-decoration: none;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.fa {
+	margin-left: 9px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu {
+	min-width: 220px;
+	position: absolute;
+	right: 100%;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+	border: 1px solid #dae0ef;
+	box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a {
+	background-image: none;
+	color: #24214c;
+	border-left: 0 none;
+	text-align: right;
+	display: block;
+	line-height: 22px;
+	padding: 8px 12px;
+	text-transform: none;
+	font-size: 13px;
+	letter-spacing: normal;
+	border-left: 0px solid;
+
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+	text-decoration: none;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a>.fa {
+	margin-left: 9px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+	min-width: 220px;
+	position: absolute;
+	right: 100%;
+	top: 0;
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+	background-color: #fff;
+	border: 1px solid #dae0ef;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
+	background-image: none;
+	color: #24214c;
+	border-left: 0 none;
+	text-align: right;
+	display: block;
+	line-height: 22px;
+	padding: 8px 12px;
+	text-transform: none;
+	font-size: 13px;
+	letter-spacing: normal;
+	border-left: 0px solid;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+	text-decoration: none;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a>.fa {
+	margin-left: 9px;
+}
+
+/* ================== Desktop Mega Menus CSS  ================== */
+.horizontalMenu>.horizontalMenu-list>li>a.active {
+	color: #fff;
+	background: #00c3ed;
+	text-decoration: none;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a:hover {
+	color: #fff;
+	background: #00c3ed;
+	text-decoration: none;
+}
+
+.navbar-brand {
+	margin-right: 0 !important;
+}
+
+@media (max-width: 568px) {
+	.main-content .navbar-top {
+		top: 0px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		width: 20%;
+		margin: 0 auto !important;
+	}
+
+	.nav-item {
+		margin-right: 0 !important;
+		margin-left: 1rem !important;
+	}
+
+	.horizontal-navtoggle {
+		margin-left: 0 !important;
+		margin-right: 1rem !important;
+	}
+
+	.navbar-nav {
+		padding: 0 !important;
+	}
+
+	.dropdown-menu {
+		left: 0 !important;
+		right: auto !important;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	.navbar-brand {
+		margin-right: 3rem !important;
+	}
+}
+
+.navbar .navbar-brand-img.main-logo {
+	max-height: 2.5rem;
+	text-align: center;
+}
+
+.page-header {
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+	margin: 30px 0 30px 0 !important;
+	border-radius: .375rem;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu .sub-menu-sub:after {
+	content: '\e92e';
+	font-family: 'feather';
+	font-size: 13px;
+	position: absolute;
+	top: 9px;
+	left: 14px;
+	color: #70768e;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a:hover {
+	text-decoration: none;
+	color: #00c3ed;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+	text-decoration: none;
+	color: #00c3ed;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list li a:hover {
+	text-decoration: none;
+	color: #00c3ed;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu {
+	width: 100%;
+	right: 0px;
+	position: absolute;
+	top: 53px;
+	color: #24214c;
+	z-index: 1000;
+	margin: 0px;
+	text-align: right;
+	font-size: 15px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .megamenu-content {
+	border: 1px solid #dae0ef;
+	background-color: #fff;
+	padding: 14px 20px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .title {
+	padding: 5px 0 5px 5px;
+	font-size: 16px;
+	color: #424242;
+	margin: 0px 0px 4px 0px;
+	text-align: right;
+	font-weight: 600;
+}
+
+@media (min-width:1024px) {
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list:first-child {
+		border: 0
+	}
+
+	/*.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list{
+		border-left:1px solid #dae0ef
+	}*/
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .wsmwnutxt {
+	width: 100%;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 22px;
+	color: #424242;
+	margin-top: 10px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list li {
+	display: block;
+	text-align: center;
+	white-space: nowrap;
+	text-align: right;
+	padding: 5px 10px 5px 10px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list li a {
+	line-height: 18px;
+	border-left: none;
+	text-align: right;
+	padding: 6px 0px;
+	background: #fff;
+	background-image: none;
+	color: #24214c;
+	border-left: 0 none;
+	display: block;
+	background-color: #fff;
+	font-size: 13px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu li .fa {
+	margin-left: 5px;
+	text-align: center;
+	width: 18px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu li a:hover {
+	background: transparent;
+	text-decoration: none;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .link-list li .fa {
+	font-size: 12px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu li .fa {
+	margin-left: 5px;
+	text-align: center;
+	width: 18px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .mrgtop {
+	margin-top: 15px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .show-grid div {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color: #dbdbdb;
+	border: 1px solid #e7e7e7;
+	color: #6a6a6a;
+	margin: 2px 0px;
+	font-size: 13px;
+}
+
+/*= Desktop Half Menu CSS =*/
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu.halfmenu {
+	width: 30%;
+	right: auto;
+	left: auto;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu.halfdiv {
+	width: 20%;
+	right: auto;
+	left: auto;
+}
+
+/*= Desktop HTML Form Menu CSS =*/
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form {
+	width: 100%;
+	display: block;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form input[type="text"] {
+	width: 100%;
+	border: 1px solid #e2e2e2;
+	color: #24214c;
+	font-size: 13px;
+	padding: 8px 5px;
+	margin-bottom: 8px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form textarea {
+	width: 100%;
+	border: 1px solid #e2e2e2;
+	color: #24214c;
+	font-size: 13px;
+	padding: 8px 5px;
+	margin-bottom: 8px;
+	min-height: 122px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form input[type="submit"] {
+	width: 25%;
+	display: block;
+	height: 32px;
+	float: left;
+	border: none;
+	margin-left: 15px;
+	cursor: pointer;
+	background-color: #e1e1e1;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form input[type="button"] {
+	width: 25%;
+	display: block;
+	height: 32px;
+	float: left;
+	border: none;
+	cursor: pointer;
+	background-color: #e1e1e1;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .carousel-inner .item img {
+	width: 100%;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .carousel-control-next {
+	opacity: 0.8;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .carousel-control-prev {
+	opacity: 0.8;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .carousel-caption {
+	bottom: 0px;
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 13px;
+	height: 31px;
+	right: 0;
+	padding: 7px 0;
+	left: 0;
+	width: 100%;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .typography-text {
+	padding: 0px 0px;
+	font-size: 14px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .typography-text ul {
+	padding: 0px 0px;
+	margin: 0px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .typography-text p {
+	text-align: justify;
+	line-height: 24px;
+	color: #656565;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .typography-text ul li {
+	display: block;
+	padding: 2px 0px;
+	line-height: 22px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .typography-text ul li a {
+	color: #656565;
+}
+
+/* ================== Desktop Extra CSS ================== */
+
+.horizontal-header {
+	display: none;
+}
+
+.overlapblackbg {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.horizontalMenu .horizontalMenu-click {
+	display: none;
+}
+
+.horizontalMenu .horizontalMenu-click02 {
+	display: none;
+}
+
+.hometext {
+	display: none;
+}
+
+/*==============================================================================
+                              Start Mobile CSS
+===============================================================================*/
+
+/* ================== Mobile Menu Change Brake Point ================== */
+
+@media only screen and (max-width: 991px) {
+	/* ================== Mobile Base CSS ================== */
+
+	body.active {
+		overflow: hidden;
+	}
+
+	/* ================== Mobile Main Menu CSS ================== */
+	.desktoplogo {
+		display: none;
+	}
+
+	.horizontal-main {
+		height: 0;
+		padding: 0;
+	}
+
+	.horizontalMenucontainer {
+		background-attachment: local;
+		background-position: 33% 0%;
+	}
+
+	.horizontalMenu {
+		width: 100%;
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+		right: 0;
+		overflow-y: hidden;
+		padding: 0;
+		top: 0;
+		position: fixed;
+		visibility: hidden;
+		margin: 0px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list {
+		height: auto;
+		min-height: 100%;
+		width: 240px;
+		background: #fff;
+		padding-bottom: 0;
+		margin-left: -240px;
+		display: block;
+		text-align: center;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li {
+		width: 100%;
+		display: block;
+		float: none;
+		border-left: none;
+		background-color: transparent;
+		position: relative;
+		white-space: inherit;
+		clear: right;
+		padding: 0;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a {
+		padding: 12px 17px 12px 32px;
+		font-size: 14px;
+		text-align: right;
+		border-left: solid 0px;
+		color: #24214c;
+		line-height: 25px;
+		border-bottom: 1px solid;
+		border-bottom-color: rgba(0, 0, 0, 0.13);
+		position: static;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a span.fa.fa-caret-down {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li a.menuhomeicon {
+		padding-left: 17px;
+		padding-right: 17px;
+		border-top: solid 1px rgba(0, 0, 0, 0.13);
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a>.fa {
+		font-size: 16px;
+		color: #bfbfbf;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a .arrow:after {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li:hover>a {
+		background-color: rgba(0, 0, 0, 0.08);
+		text-decoration: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a>.hometext {
+		display: inline-block;
+	}
+
+	/* ================== Mobile Slide Down Links CSS ================== */
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu {
+		display: none;
+		position: relative;
+		top: 0px;
+		background-color: #fff;
+		border: none;
+		padding: 0px;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		-webkit-transition: inherit;
+		-moz-transition: inherit;
+		transition: inherit;
+		-webkit-transform-style: flat;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a {
+		line-height: 20px;
+		font-size: 13px;
+		padding: 10px 16px 10px 0;
+		color: #24214c;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li span+a {
+		padding-left: 30px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.fa {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a:hover {
+		background-color: #e7e7e7;
+		color: #24214c;
+		text-decoration: underline;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu li:hover>a {
+		background-color: #e7e7e7;
+		color: #24214c;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu {
+		width: 100%;
+		position: static;
+		right: 100%;
+		top: 0;
+		display: none;
+		margin: 0px;
+		padding: 0px;
+		border: solid 0px;
+		transform: none;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		-webkit-transition: inherit;
+		-moz-transition: inherit;
+		transition: inherit;
+		-webkit-transform-style: flat;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li {
+		margin: 0px 0px 0px 0px;
+		padding: 0px;
+		position: relative;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a {
+		line-height: 20px;
+		font-size: 13px;
+		padding: 10px 26px 10px 0;
+		color: #24214c !important;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li span+a {
+		padding-left: 30px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a>.fa {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+		background-color: #e7e7e7;
+		color: #24214c;
+		text-decoration: underline;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>a.active {
+		color: #24214c;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li:hover>a {
+		color: #24214c;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu {
+		width: 100%;
+		position: static;
+		right: 100%;
+		top: 0;
+		display: none;
+		margin: 0px;
+		padding: 0px;
+		border: solid 0px;
+		transform: none;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		-webkit-transition: inherit;
+		-moz-transition: inherit;
+		transition: inherit;
+		-webkit-transform-style: flat;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li {
+		margin: 0px 0px 0px 0px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a {
+		line-height: 20px;
+		font-size: 13px;
+		padding: 10px 34px 10px 0;
+		color: #24214c;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li span+a {
+		padding-left: 30px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a>.fa {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a:hover {
+		background-color: #e7e7e7;
+		color: #24214c;
+		text-decoration: underline;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu>li>ul.sub-menu>li>a.active {
+		color: #24214c;
+	}
+
+	/* ================== Mobile Mega Menus CSS  ================== */
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu {
+		color: #24214c;
+		display: none;
+		position: relative;
+		top: 0px;
+		padding: 10px 0px;
+		border: solid 0px;
+		transform: none;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+		-o-transform: none;
+		transform: none;
+		-webkit-transition: inherit;
+		-moz-transition: inherit;
+		transition: inherit;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+		-webkit-transform-style: flat;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu.halfmenu {
+		width: 100%;
+		margin: 0px;
+		padding: 5px 0px 10px 0px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .title {
+		color: #24214c;
+		font-size: 15px;
+		padding: 10px 0 10px 8px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu>ul {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		font-size: 13px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu>ul>li>a {
+		padding: 9px 14px;
+		line-height: normal;
+		font-size: 13px;
+		background-color: #e7e7e7;
+		color: #24214c;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu>ul>li>a:hover {
+		background-color: #24214c000;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu ul li.title {
+		line-height: 26px;
+		color: #24214c;
+		margin: 0px;
+		font-size: 15px;
+		padding: 7px 0px;
+		background-color: transparent;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu.halfdiv {
+		width: 100%;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form {
+		padding: 5px 0px 62px 0px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .show-grid div {
+		margin: 0px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form input[type="button"] {
+		width: 46%;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form input[type="submit"] {
+		width: 46%;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontal-megamenu .menu_form textarea {
+		min-height: 100px;
+	}
+
+	/* ================== Mobile Header CSS ================== */
+	.horizontal-header {
+		width: 100%;
+		display: block;
+		position: relative;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		height: 54px;
+		background-color: #eaecf0;
+		text-align: center;
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+		box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+	}
+
+	.active .horizontal-header {
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+	}
+
+	.horizontal-header .smllogo {
+		display: inline-block;
+		margin-top: 15px;
+	}
+
+	/* Mobile Search Bar*/
+	.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch {
+		width: 86%;
+		margin: 7% 7%;
+		padding: 0px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch input {
+		border-radius: 50px
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li.rightmenu>.topmenusearch input:focus {
+		width: 100%;
+	}
+
+	.callusbtn {
+		color: #24214c;
+		font-size: 21px;
+		position: absolute;
+		left: 5px;
+		top: 0px;
+		transition: all 0.4s ease-in-out 0s;
+		z-index: 102;
+		padding: 11px 14px;
+	}
+
+	.callusbtn .fa {
+		vertical-align: top;
+		margin-top: 4px;
+	}
+
+	.callusbtn:hover .fa {
+		color: #24214c;
+	}
+
+	/* Mobile Toggle Menu icon (X ICON) */
+	.animated-arrow {
+		position: absolute;
+		top: 17px;
+		z-index: 102;
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		-ms-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+	}
+
+	.animated-arrow {
+		cursor: pointer;
+		padding: 16px 0 16px 35px;
+		margin: 11px 20px 0 0;
+	}
+
+	.animated-arrow span,
+	.animated-arrow span:before,
+	.animated-arrow span:after {
+		cursor: pointer;
+		height: 2px;
+		width: 17px;
+		background: #24214c;
+		position: absolute;
+		display: block;
+		content: '';
+	}
+
+	.animated-arrow span:before {
+		top: -7px;
+		width: 23px;
+	}
+
+	.animated-arrow span:after {
+		bottom: -7px;
+		width: 17px;
+	}
+
+	.animated-arrow span,
+	.animated-arrow span:before,
+	.animated-arrow span:after {
+		transition: all 500ms ease-in-out;
+	}
+
+	.active .animated-arrow span:after {
+		width: 23px;
+		top: -3px;
+	}
+
+	.active .animated-arrow span {
+		background-color: transparent;
+	}
+
+	.active .animated-arrow span:before,
+	.active .animated-arrow.active span:after {
+		top: -3px;
+	}
+
+	.active .animated-arrow span:before {
+		transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		bottom: 0px;
+	}
+
+	.active .animated-arrow span:after {
+		transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+
+	/* ================== Mobile Overlay/Drawer CSS ================== */
+	.overlapblackbg {
+		left: 0;
+		width: calc(100% - 240px);
+		height: 100vh;
+		min-height: 100%;
+		position: fixed;
+		top: 0;
+		opacity: 0;
+		visibility: hidden;
+		background-color: rgba(0, 0, 0, 0.45);
+		cursor: pointer;
+	}
+
+	.active .horizontalMenu .overlapblackbg {
+		opacity: .5;
+		visibility: visible;
+		-webkit-transition: opacity 1.5s ease-in-out;
+		-moz-transition: opacity 1.5s ease-in-out;
+		-ms-transition: opacity 1.5s ease-in-out;
+		-o-transition: opacity 1.5s ease-in-out;
+	}
+
+	.horizontalMenucontainer {
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+	}
+
+	.active .horizontalMenucontainer {
+		margin-left: 240px;
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+	}
+
+	.active .horizontalMenu {
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		visibility: visible;
+		z-index: 1000;
+		top: 0;
+		height: 100% !important;
+	}
+
+	.active .horizontalMenu>.horizontalMenu-list {
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-o-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out;
+		margin-right: 0;
+	}
+
+	/* ================== Mobile Sub Menu Expander Arrows  ================== */
+	.horizontalMenu>.horizontalMenu-list>li>.horizontalMenu-click {
+		height: 49px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		cursor: pointer;
+		width: 100%;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li .horizontalMenu-click.ws-activearrow>i {
+		transform: rotate(180deg);
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>.horizontalMenu-click>i {
+		display: block;
+		height: 23px;
+		width: 25px;
+		margin-top: 14px;
+		margin-left: 10px;
+		background-size: 25px;
+		font-size: 21px;
+		color: rgba(0, 0, 0, 0.2);
+		float: left;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li .horizontalMenu-click02 {
+		height: 41px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		cursor: pointer;
+		width: 100%;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li .horizontalMenu-click02>i {
+		display: block;
+		height: 23px;
+		width: 25px;
+		margin: 8px 6px 8px 6px;
+		background-size: 25px;
+		font-size: 21px;
+		color: rgba(0, 0, 0, 0.2);
+		float: left;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li .horizontalMenu-click02>i.horizontalMenu-rotate {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	.mega-menubg {
+		box-shadow: none !important;
+		border: 0 !important;
+		padding: 0 !important;
+
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a.sub-icon:before {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a:hover.sub-icon:before {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu .sub-menu-sub:after {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a .hor-icon {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a:hover {
+		background: #fff;
+		color: #00c3ed;
+		text-decoration: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu li:hover>a {
+		background: #00c3ed;
+		color: #fff !important;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li:hover>a {
+		background: #00c3ed;
+		color: #fff !important;
+		text-decoration: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li:hover>a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>ul.sub-menu {
+		box-shadow: none !important;
+		background: rgb(245, 244, 247);
+		border-radius: 0px !important;
+	}
+
+	.mega-menubg:before {
+		display: none;
+	}
+
+	.mega-menubg ul {
+		padding: 0;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu {
+		box-shadow: none !important;
+		border-radius: 0 !important
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu:before {
+		display: none;
+	}
+
+	/*End Media Query*/
+}
+
+/* Extra @Media Query*/
+@media (min-width: 768px) {
+	.animated-arrow {
+		top: 9px !important;
+	}
+}
+
+@media (min-width:993px) and (max-width: 1366px) {
+	.horizontalMenu {
+		width: 100%
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a {
+		font-size: 13px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a.sub-icon:before {
+		left: 0 !important;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width:1162px) {
+	.desktoplogo {
+		margin-right: 12px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a>.arrow {
+		display: none;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li>a {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li a.menuhomeicon {
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a.sub-icon:before {
+	content: '\e92d';
+	font-family: 'feather';
+	font-size: 13px;
+	position: absolute;
+	top: 17px;
+	left: 6px;
+	color: #fff;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>a:hover.sub-icon:before {
+	content: '\e930';
+	font-family: 'feather';
+	font-size: 13px;
+	position: absolute;
+	top: 17px;
+	left: 6px;
+	color: #fff;
+}
