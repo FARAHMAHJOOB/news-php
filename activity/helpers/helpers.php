@@ -66,29 +66,17 @@ function dd($var)
         exit;
 }
 
-function persianValidation($filed)
-{
-        $validation = [
-                'tags' => 'تگ ها',
-                'parent_id' => 'والد',
-                'image' => 'عکس',
-                'name' => 'نام',
-                'summary' => 'خلاصه',
-                'body' => 'توضیحات',
-                'description' => 'توضیحات',
-                'category_id' => 'دسته بندی',
-                'published_at' => 'تاریخ انتشار',
-                'url' => 'آدرس url',
-                'title' => 'عنوان',
-                'email' => 'ایمیل',
-                'password' => 'رمز عبور',
-                'username' => 'نام کاربری',
-                'confirm-password' => 'تکرار رمز عبور',
-        ];
-        return $validation[$filed];
-}
-
 function jalaliData($date)
 {
         return \Parsidev\Jalali\jDate::forge($date)->format('datetime');
+}
+
+// show old value of inputs 
+function old($inputName , $recordVal= null)
+{
+        if ($recordVal == null) {
+              return flash($inputName);
+        } else {
+                return flash($inputName) != null ? flash($inputName) : $recordVal;
+        }
 }

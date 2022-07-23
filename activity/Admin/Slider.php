@@ -11,7 +11,7 @@ class Slider extends Admin
     public function index()
     {
         $db = new DataBase;
-        $sliders = $db->select('SELECT * FROM sliders WHERE `deleted_at` IS NULL ORDER BY `id` DESC');
+        $sliders = $db->select('SELECT * FROM sliders WHERE `deleted_at` IS NULL ORDER BY `id` DESC')->fetchAll();
         $title = 'اسلایدر';
         require_once(BASE_PATH . '/view/admin/slider/index.php');
     }

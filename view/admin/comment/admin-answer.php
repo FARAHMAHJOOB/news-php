@@ -17,7 +17,7 @@
                 <div class="col-12">
                     <div class="form-group">
                         <label class="form-label">پاسخ شما</label>
-                        <textarea class="form-control" name="body" id="body" placeholder="پاسخ"></textarea>
+                        <textarea class="form-control" name="body" id="body" placeholder="پاسخ"><?=  old('body')  ?></textarea>
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['body'] ?? ''   ?>
                         </span>

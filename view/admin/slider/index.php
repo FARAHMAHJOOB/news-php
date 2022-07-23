@@ -18,7 +18,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($sliders as $key=>$slider) {  ?>
+            <?php foreach ((array) $sliders as $key=>$slider) {  ?>
               <tr>
                 <td><?= $key+=1 ?></td>
                 <td class=""><img src="<?= asset($slider['image']) ?? '--' ?>" alt="" width="70px" height="50px"></td>

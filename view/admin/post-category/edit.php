@@ -10,7 +10,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="form-label">نام دسته بندی</label>
-                        <input type="text" class="form-control" name="name" id="name" value="<?= $postCategory['name']  ?>" required>
+                        <input type="text" class="form-control" name="name" id="name" value="<?=  old('name', $postCategory['name']) ?>" required>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -28,7 +28,7 @@
                         <select name="parent_id" id="parent_id" class="form-control custom-select">
                             <option value="">دسته اصلی</option>
                            <?php foreach($postCategories as $category) {  ?>
-                            <option value="<?= $category['id']  ?>" <?=  $category['id'] == $postCategory['parent_id'] ? 'selected' : '';  ?> ><?= $category['name']  ?></option>
+                            <option value="<?= $category['id']  ?>" <?=  $category['id'] == old('parent_id', $postCategory['parent_id']) ? 'selected' : '';  ?> ><?= $category['name']  ?></option>
                            <?php  }  ?>
                         </select>
                     </div>
@@ -36,7 +36,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="tags">تگ ها</label>
-                        <input type="hidden" class="form-control" name="tags" id="tags" value="<?= $postCategory['tags']  ?>" required>
+                        <input type="hidden" class="form-control" name="tags" id="tags" value="<?= old('tags', $postCategory['tags']) ?>" required>
                         <select class="select2 form-control form-control-sm col-12 " id="select_tags" multiple>
                         </select>
                     </div>
@@ -48,7 +48,7 @@
                 <div class="col-md-12 ">
                     <div class="form-group mb-0">
                         <label class="form-label">توضیحات</label>
-                        <textarea class="form-control" name="description" id="description" rows="2" placeholder="توضیحات"><?= $postCategory['description']  ?></textarea>
+                        <textarea class="form-control" name="description" id="description" rows="2" placeholder="توضیحات"><?= old('description', $postCategory['description'])  ?></textarea>
                     </div>
                 </div>
                 <div class="col-md-12 mt-4 text-left">

@@ -19,7 +19,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($managers as $key => $manager) {  ?>
+            <?php foreach ((array) $managers as $key => $manager) {  ?>
               <tr class="py-0">
                 <td><?= $key += 1 ?></td>
                 <td class="text-sm font-weight-600"><?= $manager['name'] ?></td>

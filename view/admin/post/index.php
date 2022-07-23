@@ -24,8 +24,8 @@
               <th class="text-left">عملیات</th>
             </tr>
           </thead>
-          <tbody>
-            <?php foreach ($posts as $key => $post) {  ?>
+          <tbody>        
+            <?php foreach ((array) $posts as $key => $post) {  ?>
               <tr>
                 <td><?= $key += 1 ?></td>
                 <td class="text-sm font-weight-600"><?= $post['title'] ?></td>
@@ -45,7 +45,6 @@
                 </td>
               </tr>
             <?php   }  ?>
-
           </tbody>
         </table>
       </div>

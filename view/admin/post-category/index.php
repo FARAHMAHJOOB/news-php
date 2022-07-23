@@ -21,7 +21,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($postCategories as $key=>$category) {  ?>
+            <?php foreach ((array) $postCategories as $key=>$category) {  ?>
               <tr>
               <td><?= $key+=1 ?></td>
                 <td class="text-sm font-weight-600"><?= $category['name'] ?></td>

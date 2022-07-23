@@ -33,7 +33,10 @@ class Setting extends Admin
     }
 
     public function update($request, $id)
-    {
+    {//dont allow to change another fields of table and user can just change fields declared in setRequest method
+        $safeRequest = new Request($request);
+        $request = $safeRequest->setRequest(['title', 'keywords', 'description' , 'logo' , 'icon']);
+
         $validate = new Validation($request);
         $validate->required(['title', 'keywords', 'description']);
         $validate->image(['logo', 'icon']);

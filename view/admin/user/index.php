@@ -17,7 +17,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($users as $key => $user) {  ?>
+            <?php foreach ((array) $users as $key => $user) {  ?>
               <tr class="py-0">
                 <td><?= $key += 1 ?></td>
                 <td class="text-sm font-weight-600"><?= $user['name'] ?></td>

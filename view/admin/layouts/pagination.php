@@ -1,4 +1,4 @@
-<?php  if (count($pageNumbers) > 1) {  ?>
+<?php  if ($pageNumbers != null) {  ?>
     <div class="card-body">
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center mb-0">

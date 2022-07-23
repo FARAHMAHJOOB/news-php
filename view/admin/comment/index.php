@@ -19,7 +19,7 @@
           </thead>
           <tbody>
 
-              <?php foreach ($comments as $key => $comment) {  ?>
+              <?php foreach ((array) $comments as $key => $comment) {  ?>
                 <tr class="py-0">
                   <td><?= $key += 1 ; echo $comment['seen'] == 0 ? '<span class="badge badge-pill badge-warning">جدید</span>' : ''; ?></td>
                   <td class="text-sm"><?= substr($comment['body'], 0, 40) . ' ...'  ?></td>

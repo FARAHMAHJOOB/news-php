@@ -10,7 +10,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="form-label">عنوان خبر</label>
-                        <input type="text" class="form-control" name="title" id="title" placeholder="عنوان ...">
+                        <input type="text" class="form-control" name="title" id="title" placeholder="عنوان ..." value="<?= old('title') ?>">
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['title'] ?? ''   ?>
                         </span>
@@ -19,7 +19,7 @@
                 <div class="col-12 col-md-6">
                     <div class="form-group">
                         <label for="published_at">تاریخ انتشار</label>
-                        <input type="text" name="published_at" id="published_at" class="form-control form-control-sm d-none" value="">
+                        <input type="text" name="published_at" id="published_at" class="form-control form-control-sm d-none" >
                         <input type="text" id="published_at_view" class="form-control" value="" placeholder="تاریخ انتشار...">
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['published_at'] ?? ''   ?>
@@ -29,7 +29,7 @@
                 <div class="col-12">
                     <div class="form-group">
                         <label class="form-label">خلاصه خبر</label>
-                        <input type="text" class="form-control" name="summary" id="summary" placeholder="خلاصه ...">
+                        <input type="text" class="form-control" name="summary" id="summary" placeholder="خلاصه ..." value="<?= old('summary')  ?>">
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['summary'] ?? ''   ?>
                         </span>
@@ -55,7 +55,7 @@
                         <select name="category_id" id="category_id" class="form-control custom-select">
                             <option value="">انتخاب کنید</option>
                             <?php foreach ($postCategories as $category) {  ?>
-                                <option value="<?= $category['id']  ?>"><?= $category['name']  ?></option>
+                                <option value="<?= $category['id']  ?>" <?= old('category_id') == $category['id'] ? 'selected' : '' ?>><?= $category['name']  ?></option>
                             <?php  }  ?>
                         </select>
                         <span role="alert" class="text-danger text-sm">
@@ -66,7 +66,7 @@
                 <div class="col-md-12 ">
                     <div class="form-group mb-0">
                         <label class="form-label">توضیح خبر</label>
-                        <textarea class="form-control" name="body" id="body" rows="2" placeholder="توضیحات"></textarea>
+                        <textarea class="form-control" name="body" id="body" rows="2" placeholder="توضیحات"><?= old('body')  ?></textarea>
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['body'] ?? ''   ?>
                         </span>

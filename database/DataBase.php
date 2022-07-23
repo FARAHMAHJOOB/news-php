@@ -121,7 +121,7 @@ class DataBase
         }
     }
 
-    public function createTable($query)
+    public function createDataBase($query)
     {
         try {
             $this->connection->exec($query);

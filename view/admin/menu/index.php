@@ -19,7 +19,7 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($menus as $key=>$menu) {  ?>
+            <?php foreach ((array) $menus as $key=>$menu) {  ?>
               <tr>
               <td><?= $key+=1 ?></td>
                 <td class="text-sm font-weight-600"><?= $menu['name'] ?></td>

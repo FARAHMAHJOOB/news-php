@@ -22,7 +22,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="form-label">آدرس url</label>
-                        <input type="text" class="form-control" name="url" id="url" placeholder="آدرس url">
+                        <input type="text" class="form-control" name="url" id="url" placeholder="آدرس url" value="<?= old('url')  ?>">
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['url'] ?? ''   ?>
                         </span>

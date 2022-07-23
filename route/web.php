@@ -70,20 +70,20 @@ uri('admin/setting/edit/{id}', 'Admin\Setting', 'edit');
 uri('admin/setting/update/{id}', 'Admin\Setting', 'update', 'POST');
 
 //Auth 
-uri('register-form', 'Auth\Auth', 'registerForm');
-uri('register', 'Auth\Auth', 'register', 'POST');
-uri('activation-user/{verify_token}', 'Auth\Auth', 'activationUser');
+uri('register-form', 'Auth\Register', 'registerForm');
+uri('register', 'Auth\Register', 'register', 'POST');
+uri('activation-user/{verify_token}', 'Auth\Register', 'activationUser');
 
-uri('login-form', 'Auth\Auth', 'loginForm');
-uri('login', 'Auth\Auth', 'login', 'POST');
+uri('login-form', 'Auth\Login', 'loginForm');
+uri('login', 'Auth\Login', 'login', 'POST');
 
 uri('logout', 'Auth\Auth', 'logout');
 
-uri('forgot-password-form', 'Auth\Auth', 'forgotPasswordForm');
-uri('forgot-password', 'Auth\Auth', 'forgotPassword' , 'POST');
+uri('forgot-password-form', 'Auth\ForgotPassword', 'forgotPasswordForm');
+uri('forgot-password', 'Auth\ForgotPassword', 'forgotPassword' , 'POST');
 
-uri('reset-password-form/{forgot_token}', 'Auth\Auth', 'resetPasswordForm');
-uri('reset-password/{forgot_token}', 'Auth\Auth', 'resetPassword' , 'POST');
+uri('reset-password-form/{forgot_token}', 'Auth\ResetPassword', 'resetPasswordForm');
+uri('reset-password/{forgot_token}', 'Auth\ResetPassword', 'resetPassword' , 'POST');
 
 
 //app

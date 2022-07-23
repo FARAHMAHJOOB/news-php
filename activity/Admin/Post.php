@@ -37,7 +37,6 @@ class Post extends Admin
         //dont allow to change another fields of table and user can just change fields declared in setRequest method
         $safeRequest = new Request($request);
         $request = $safeRequest->setRequest(['title', 'summary', 'image', 'category_id', 'published_at', 'body']);
-
         $validate = new Validation($request);
         $validate->existIn(['category_id', 'post_categories', 'id']);
         $validate->required(['title', 'summary', 'image', 'category_id', 'published_at', 'body']);
@@ -71,7 +70,6 @@ class Post extends Admin
         //dont allow to change another fields of table and user can just change fields declared in setRequest method
         $safeRequest = new Request($request);
         $request = $safeRequest->setRequest(['title', 'summary', 'image', 'category_id', 'published_at', 'body']);
-        
         $validate = new Validation($request);
         $validate->existIn(['category_id', 'post_categories', 'id']);
         $validate->required(['title', 'summary', 'category_id', 'published_at', 'body']);
@@ -80,7 +78,7 @@ class Post extends Admin
 
         $realTimestampt = substr($request['published_at'], 0, 10);
         $request['published_at'] = date("Y-m-d H:i:s", (int)$realTimestampt);
-        $request = $this->removeOldImage($request , 'posts' , ['image'] , $id);
+        $request = $this->removeOldImage($request, 'posts', ['image'], $id);
         $request = array_merge($request, ['author_id' => Auth::user()['id']]);
         $db = new DataBase();
         $db->update('posts', $id, array_keys($request), $request);

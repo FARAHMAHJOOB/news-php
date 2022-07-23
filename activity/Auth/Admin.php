@@ -32,30 +32,19 @@ class Admin{
         //Create an instance; passing `true` enables exceptions
         $mail = new PHPMailer(true);
         try {
-            // if you want use mailtrap service use below setting
-            $mail->isSMTP();
-            $mail->Host = 'smtp.mailtrap.io';
-            $mail->SMTPAuth = true;
-            $mail->Port = 2525;
-            $mail->Username = '';
-            $mail->Password = '';
+           
+            //  if you want use google mail use below setting
+            // Server settings
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER; //Enable verbose debug output
             $mail->CharSet = "UTF-8"; //Enable verbose debug output
+            $mail->isSMTP(); //Send using SMTP
+            $mail->Host = MAIL_HOST; //Set the SMTP server to send through
             $mail->SMTPAuth = SMTP_AUTH; //Enable SMTP authentication
+            $mail->Username = MAIL_USERNAME; //SMTP username
+            $mail->Password = MAIL_PASSWORD; //SMTP password
+            $mail->SMTPSecure = 'tls'; //Enable implicit TLS encryption
+            $mail->Port = MAIL_PORT; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-
-
-            /* if you want use google mail use below setting
-            //Server settings
-            // $mail->SMTPDebug = SMTP::DEBUG_SERVER; //Enable verbose debug output
-            // $mail->CharSet = "UTF-8"; //Enable verbose debug output
-            // $mail->isSMTP(); //Send using SMTP
-            // $mail->Host = MAIL_HOST; //Set the SMTP server to send through
-            // $mail->SMTPAuth = SMTP_AUTH; //Enable SMTP authentication
-            // $mail->Username = MAIL_USERNAME; //SMTP username
-            // $mail->Password = MAIL_PASSWORD; //SMTP password
-            // $mail->SMTPSecure = 'tls'; //Enable implicit TLS encryption
-            // $mail->Port = MAIL_PORT; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-*/
             //Recipients
             $mail->setFrom(SENDER_MAIL, SENDER_NAME);
             $mail->addAddress($emailAddress);

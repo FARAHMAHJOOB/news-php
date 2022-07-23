@@ -10,7 +10,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="form-label">نام دسته بندی</label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="نام ...">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="نام ..." value="<?=  old('name') ?>">
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['name'] ?? ''   ?>
                         </span>
@@ -34,7 +34,7 @@
                         <select name="parent_id" id="parent_id" class="form-control custom-select">
                             <option value="">دسته اصلی</option>
                             <?php foreach ($postCategories as $category) {  ?>
-                                <option value="<?= $category['id'] ?>"><?= $category['name'] ?></option>
+                                <option value="<?= $category['id'] ?>" <?= old('parent_id') == $category['id'] ? 'selected' : ''  ?>><?= $category['name'] ?></option>
                             <?php  }  ?>
                         </select>
                         <span role="alert" class="text-danger text-sm">
@@ -45,7 +45,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="tags">تگ ها</label>
-                        <input type="hidden" class="form-control" name="tags" id="tags" value="">
+                        <input type="hidden" class="form-control" name="tags" id="tags" value="<?=  old('tags') ?>">
                         <select class="select2 form-control form-control-sm col-12 " id="select_tags" multiple>
                         </select>
                         <span role="alert" class="text-danger text-sm">
@@ -57,7 +57,7 @@
                 <div class="col-md-12 ">
                     <div class="form-group mb-0">
                         <label class="form-label">توضیحات</label>
-                        <textarea class="form-control" name="description" id="description" rows="2" placeholder="توضیحات"></textarea>
+                        <textarea class="form-control" name="description" id="description" rows="2" placeholder="توضیحات"><?=  old('description') ?></textarea>
                     </div>
                     <span role="alert" class="text-danger text-sm">
                         <?= flash('invalidInputs')['description'] ??''  ?>

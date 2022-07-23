@@ -1,6 +1,7 @@
 <?php
 
 use Auth\Auth;
+use database\CreateDB;
 use database\DataBase;
 
 //session start
@@ -25,18 +26,19 @@ define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 
 //mail setting if you want use google mail define below consts and set them 
-// define('MAIL_HOST', 'smtp.gmail.com');
-// define('MAIL_USERNAME', '');
-// define('MAIL_PASSWORD', '');
-// define('MAIL_PORT', 587);
+define('MAIL_HOST', 'smtp.gmail.com');
+define('MAIL_USERNAME', '');
+define('MAIL_PASSWORD', '');
+define('MAIL_PORT', 587);
 define('SMTP_AUTH', true);
-define('SENDER_MAIL', 'farah.kh1105@gmail.com');
+define('SENDER_MAIL', 'destination email address');
 define('SENDER_NAME', 'سایت خبری');
 
 
 $title = 'سایت خبری';
 
 require_once 'database/DataBase.php';
+require_once 'database/CreateDB.php';
 require_once 'activity/Admin/Admin.php';
 require_once 'activity/Admin/PostCategory.php';
 require_once 'activity/Admin/Post.php';
@@ -54,6 +56,10 @@ require_once 'activity/Validation/Request.php';
 //auth
 require_once 'activity/Auth/Admin.php';
 require_once 'activity/Auth/Auth.php';
+require_once 'activity/Auth/Register.php';
+require_once 'activity/Auth/Login.php';
+require_once 'activity/Auth/ForgotPassword.php';
+require_once 'activity/Auth/ResetPassword.php';
 
 //home
 require_once 'activity/App/Home.php';
@@ -117,6 +123,5 @@ function currentDomain()
 
 
 require_once 'activity/helpers/helpers.php';
-// dd(time() - $_SESSION['expireLogin']);
 
 require_once 'route/web.php';

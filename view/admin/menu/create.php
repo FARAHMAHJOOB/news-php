@@ -10,7 +10,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="form-label">نام </label>
-                        <input type="text" class="form-control" name="name" id="name" placeholder="نام ...">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="نام ..." value="<?=  old('name') ?>">
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['name'] ?? ''   ?>
                         </span>
@@ -19,7 +19,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="form-label">آدرس url </label>
-                        <input type="text" class="form-control" name="url" id="url" placeholder="آدرس ...">
+                        <input type="text" class="form-control" name="url" id="url" placeholder="آدرس ..." value="<?=  old('url')?>">
                         <span role="alert" class="text-danger text-sm">
                             <?= flash('invalidInputs')['url'] ?? ''   ?>
                         </span>
@@ -31,7 +31,7 @@
                         <select name="parent_id" id="parent_id" class="form-control custom-select">
                             <option value="">دسته اصلی</option>
                             <?php foreach ($parentMenus as $pMenu) {  ?>
-                                <option value="<?= $pMenu['id'] ?>"><?= $pMenu['name'] ?></option>
+                                <option value="<?= $pMenu['id'] ?>" <?=  old('parent_id') == $pMenu['id']?'selected' : '' ?>><?= $pMenu['name'] ?></option>
                             <?php  }  ?>
                         </select>
                         <span role="alert" class="text-danger text-sm">

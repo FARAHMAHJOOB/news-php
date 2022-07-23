@@ -2,12 +2,14 @@
 
 namespace Admin;
 
+use database\CreateDB;
 use database\DataBase;
 
 class Dashboard extends Admin
 {
     public function index()
     {
+   
         $db = new DataBase();
         $categoryCount = $db->select('SELECT COUNT(*) FROM post_categories')->fetch();
         $userCount = $db->select('SELECT COUNT(*) FROM users WHERE `user_type` = 0;')->fetch();
