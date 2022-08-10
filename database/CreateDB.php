@@ -188,7 +188,7 @@ COMMIT;
     {
         $this->createDataBase($this->databaseQuery);
 
-        // if you want make create data fake in youre tables 
+        // if you want create data fake in youre tables 
         // foreach($this->fakeDatas as $fakeData)
         // {
         //   $this->insert($fakeData['table'], $fakeData['fields'], $fakeData['values']);
